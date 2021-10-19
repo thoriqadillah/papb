@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/toMrHead"
+        android:layout_width="266dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="67dp"
+        android:text="Mr Head"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/toAboutUs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/toAboutUs"
+        android:layout_width="266dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:text="About Us"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/toTugaRecycle"
+        app:layout_constraintEnd_toEndOf="@+id/toMrHead"
+        app:layout_constraintTop_toBottomOf="@+id/toMrHead" />
+
+    <Button
+        android:id="@+id/toTugaRecycle"
+        android:layout_width="266dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:text="Tugas Recycle"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toAboutUs"
+        app:layout_constraintTop_toBottomOf="@+id/toAboutUs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

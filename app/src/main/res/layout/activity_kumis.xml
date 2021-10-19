@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="264dp"
+        android:layout_height="398dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/mata"
+        android:layout_width="127dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/body"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/alis"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/mata"
+        app:layout_constraintEnd_toEndOf="@+id/mata"
+        app:layout_constraintStart_toStartOf="@+id/mata"
+        app:srcCompat="@drawable/eyebrow" />
+
+    <ImageView
+        android:id="@+id/rambut"
+        android:layout_width="242dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="@+id/body"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:srcCompat="@drawable/hair" />
+
+    <ImageView
+        android:id="@+id/kumis"
+        android:layout_width="290dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toBottomOf="@+id/rambut"
+        app:srcCompat="@drawable/moustache" />
+
+    <ImageView
+        android:id="@+id/brewok"
+        android:layout_width="187dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/kumis"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/kumis"
+        app:layout_constraintTop_toBottomOf="@+id/mata"
+        app:srcCompat="@drawable/beard" />
+
+    <CheckBox
+        android:id="@+id/ckAlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:checked="true"
+        android:text="Alis"
+        app:layout_constraintBottom_toBottomOf="@+id/ckRambut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckRambut" />
+
+    <CheckBox
+        android:id="@+id/ckRambut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="26dp"
+        android:checked="true"
+        android:text="Rambut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ckKumis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="Kumis"
+        app:layout_constraintStart_toStartOf="@+id/ckRambut"
+        app:layout_constraintTop_toBottomOf="@+id/ckRambut" />
+
+    <CheckBox
+        android:id="@+id/ckBrewok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Brewok"
+        app:layout_constraintBottom_toBottomOf="@+id/ckKumis"
+        app:layout_constraintStart_toStartOf="@+id/ckAlis"
+        app:layout_constraintTop_toTopOf="@+id/ckKumis" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/btnContactUs"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brewok" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
