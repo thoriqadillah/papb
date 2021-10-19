@@ -13,7 +13,7 @@ public class KumisActivity extends AppCompatActivity implements View.OnClickList
     private ImageView kumis, brewok, alis, rambut;
     private CheckBox ckRambut, ckAlis, ckKumis, ckBrewok;
     private Button btnBack, btnContact;
-
+    //test c
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

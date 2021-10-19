@@ -21,7 +21,7 @@ public class RecycleActivity extends AppCompatActivity implements View.OnClickLi
 
     Button btnAdd;
     int foto = (R.drawable.user);
-
+//test b
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
